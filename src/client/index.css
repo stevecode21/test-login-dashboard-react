@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Start styles for scrollbar*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /* Tamaño del scroll en vertical */
+    height: 10%;
+    /* Tamaño del scroll en horizontal */
+    /* display: none; */
+    /* Ocultar scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+/*Start Styles for scrollbar*/
+
+body {
+    height: 100%;
+    /* background: yellow; */
+}
+
+html {
+    height: 100%;
+    /* background: red; */
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+/*Start styles for react component header.js*/
+.containerHeader {
+    background-color: #3FB4F3;
+    display: flex;
+    width: 100%;
+    /* z-index: 200; */
+    min-height: 3.5rem;
+    /* position: fixed; */
+}
+
+.logo {
+    background-color: rgba(128, 128, 128, 0.787);
+    margin: 0.5em 0.5em 0.5em 2em;
+    padding: 1em;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*End styles for react component header.js*/
+
+/*Start styles for react component IndexHeader.js*/
+
+.header-index {
+    /* background-color: yellow; */
+    display: flex;
+    width: 100%;
+    min-height: 3.5rem;
+    z-index: 200;
+}
+
+.navbar-index {
+    /* background: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+.navbar-index .list-nav-index {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-index .list-nav-index .item-nav-index {
+    /* background-color: red; */
+    margin: 0 7em 0 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*End styles for react component IndexHeader.js*/
+
+/*Start styles for react component Signup.js and Login.js*/
+
+.main-container-signup {
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+}
+
+.container-form {
+    -webkit-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    width: 28%;
+    height: 85%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .container-title { */
+
+/* background-color: red; */
+
+/* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+} */
+
+/* .title-form {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: #131112;
+} */
+
+.container-facebook-button {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+    margin: 1rem 0 1rem 0;
+}
+
+.button-facebook {
+    background: #3B5998;
+    border: none;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+.button-facebook:hover {
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.container-divider-form {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.text-divider-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #878788;
+}
+
+.form {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers-input {
+    /* background-color: yellow; */
+    width: 80%;
+    margin: 1rem;
+}
+
+.inputs-signup {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1rem;
+    font-size: 1em;
+}
+
+.inputs-signup:hover {
+    border-color: none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgba(0, 0, 0, 0.322);
+    font-family: 'Roboto', sans-serif;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(128, 128, 128, 0.479);
+    font-family: 'Roboto', sans-serif;
+    opacity: 5;
+    /* esto es porque Firefox le reduce la opacidad por defecto */
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(128, 128, 128, 0.479);
+    font-family: 'Roboto', sans-serif;
+    opacity: 5;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(128, 128, 128, 0.479);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-button {
+    /* background-color: yellowgreen; */
+    width: 80%;
+    height: 50px;
+    margin: 1rem 0 1rem 0;
+}
+
+.button-signup {
+    background-color: #3FB4F3;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.button-signup:hover {
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+/*additional styles login*/
+.container-link-login{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.link-login{
+    text-decoration: none;
+    color: #6666FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+}
+
+/*End styles for react component Signup.js and Login.js*/
+
+/*Start styles for react component LoggedUserHeader.js*/
+
+.header-logged-user {
+    background-color: yellow;
+    display: flex;
+    width: 100%;
+    min-height: 3.5rem;
+    z-index: 200;
+}
+
+.moreCourses {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 0 0 0 2em;
+}
+
+.moreCourses ul {
+    display: flex;
+}
+
+.moreCourses ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    /* background: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 65%;
+    padding: 0 0 0 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    /* background-color: red; */
+    margin: 0 4em 0 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*End styles for react component LoggedUserHeader.js*/
+
+/*Start styles for react component htmlCourse.js*/
+
+.containerHtmlCourse {
+    background-color: #F7F9F9;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+.containerContent {
+    background: yellow;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*End styles for react component htmlCourse.js*/
+
+/*Start styles for react component sideDrawer.js*/
+
+.side-drawer {
+    background-color: #D7DEDC;
+    /* box-shadow: 7px -2px 5px -4px rgba(0,0,0,0.69); */
+    position: fixed;
+    top: 10;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    max-width: 300px;
+    /* z-index: 200; */
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+}
+
+.side-drawer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    height: 100%;
+}
+
+.side-drawer ul li {
+    margin: 0.5rem 0;
+}
+
+.side-drawer.open-side-drawer {
+    transform: translateX(0)
+}
+
+/*End styles for react component sideDrawer.js*/
+
+/*Start styles for react component sideDrawerButton.js*/
+
+.side-drawer-button {
+    padding: 0.5rem;
+    /* box-shadow: 7px -1px 5px -4px rgba(0,0,0,0.69); */
+    position: fixed;
+    /* z-index: 200;  */
+    top: 50px;
+    left: 0;
+    /* width: 50px; */
+    transform: translateX(0);
+    transition: transform 0.2s ease-out;
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #48BEFF;
+}
+
+.side-drawer-button.open-side-button {
+    transform: translateX(260px) rotate(180deg);
+}
+
+/*End styles for react component sideDrawerButton.js*/
+
+/*Start styles for react component VideosHtmlCourse.js*/
+
+.container-videos {
+    width: 50%;
+    background-color: red;
+    height: 60%;
+    /* height: 55vh; */
+}
+
+/*End styles for react component VideosHtmlCourse.js*/
