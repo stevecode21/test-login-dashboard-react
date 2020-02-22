@@ -13,7 +13,6 @@ function App(){
     return(
         <Router>
             <Header/>
-            <Route exact path={"/html-course"} component={HtmlCourse} />
             <Route path={"/signup"} component={Signup}/>
             <Route path={"/signin"} component={Login}/>
         </Router>

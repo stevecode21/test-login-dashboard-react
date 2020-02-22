@@ -8,21 +8,10 @@ export default class IndexHeader extends Component {
                 <nav className="navbar-index" id="">
                     <ul className="list-nav-index">
                         <li className="item-nav-index">
-                            
-                            Inicio
+                        <Link to="/signin">Login</Link>
                         </li>
                         <li className="item-nav-index">
-                            Cursos
-                        </li>
-                        <li className="item-nav-index">
-                            Planes
-                        </li>
-                        <li className="item-nav-index">
-                        <Link to="/signin">Iniciar Sesión</Link>
-                        </li>
-                        <li className="item-nav-index">
-                        <Link to="/signup">Crear cuenta</Link>
-                            
+                        <Link to="/signup">Register</Link>
                         </li>
                     </ul>
                 </nav>
