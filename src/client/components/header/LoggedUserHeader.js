@@ -6,17 +6,12 @@ export default class LoggedUserHeader extends Component {
             <div className="header-logged-user">
                 <div className="moreCourses">
                     <ul>
-                        <li>Explora</li>
+                        <li>Home</li>
                     </ul>
                 </div>
                 <nav className="navbar">
                     <ul>
-                        <li>Mis cursos</li>
-                        <li>Tutorías</li>
-                        <li>Retos</li>
-                        <li>
-                            {/* <i className="far fa-user-circle"></i> */}
-                        </li>
+                        <li>Dashboard</li>
                     </ul>
                 </nav>
             </div>
