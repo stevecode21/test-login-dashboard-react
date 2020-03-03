@@ -1,51 +1,38 @@
 {
-  "name": "proyecto-delovepers-desarrollo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "webpack": "webpack --mode development --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "connect-flash": "^0.1.1",
-    "express": "^4.17.1",
-    "express-mysql-session": "^2.1.0",
-    "express-session": "^1.17.0",
-    "express-validator": "^6.3.0",
-    "morgan": "^1.9.1",
-    "mysql": "^2.17.1",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-icons": "^3.8.0",
-    "react-router-dom": "^5.1.2"
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
-    "autoprefixer": "^9.7.3",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.3.0",
-    "file-loader": "^5.0.2",
-    "html-webpack-plugin": "^3.2.0",
-    "image-webpack-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "nodemon": "^2.0.1",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^1.0.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

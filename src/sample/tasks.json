@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "fullName": "andrés villanueva",
+        "projectName":"Gestor de Tareas",
+        "workedHours":5,
+        "description": "Creación de la vista Frontend del dashboard",
+        "workTeam":"Frontend",
+        "date":"19/02/2020",
+        "hour": "14:45",
+        "finished": false
+    },
+    {
+        "id": 1,
+        "fullName": "Steven Suarez",
+        "projectName":"Login y Register User",
+        "workedHours":29,
+        "description": "Creación de la vista Frontend del Login",
+        "workTeam":"Backend",
+        "date":"18/02/2020",
+        "hour": "17:45",
+        "finished": false
+    }
+]

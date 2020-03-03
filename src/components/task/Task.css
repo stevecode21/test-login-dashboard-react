@@ -1,0 +1,73 @@
+.cardInfo{
+    display: grid;
+    grid-template-areas: "edit        workTeam    delete"
+                         "fullName    fullName    hour"
+                         "projectName projectName workedHours" 
+                         "description description description"
+                         "date        date        date"  ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr) 2fr 0.5fr;
+    border: 2px solid red;
+    width: 97%;
+}
+
+.cardInfo > div{
+    border: 1px solid grey;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cardInfo > div .edit,
+.cardInfo > div .delete{
+    border: 1px solid transparent;
+}
+
+
+.cardInfo .fullName > h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.fullName{
+    grid-area: fullName;
+}
+
+.projectName{
+    grid-area: projectName;
+}
+
+.workedHours{
+    grid-area: workedHours;
+}
+
+.description{
+    grid-area: description;
+}
+
+.description > h2{
+    text-align: justify;
+    padding: 5px;
+}
+
+.workTeam{
+    grid-area: workTeam;
+}
+
+.date{
+    grid-area: date;
+}
+
+.hour{
+    grid-area: hour;
+}
+
+.edit{
+    grid-area: edit;
+}
+
+.delete{
+    grid-area: delete;
+}
+
