@@ -18,8 +18,6 @@ export default class Tasks extends Component {
                     />
                 )
             }
-
-            <img className="btn-add" src="https://previews.123rf.com/images/sarahdesign/sarahdesign1506/sarahdesign150604666/41445111-bot%C3%B3n-de-la-cruz-icono-agregar.jpg"></img>
         </div>
     }
 }
